@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+
+    <!-- FONT ESTRICTA -->
+    <link href="https://fonts.cdnfonts.com/css/estricta" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- CSS-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <span class="Wolli"><a href="index.html">WOLLI</a></span>
+        <nav>
+            <a href="https://www.linkedin.com/in/wallace-batista-375205281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Instagram</a>
+            <a href="https://www.linkedin.com/in/wallace-batista-375205281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/wallace-batista-375205281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">WhatsApp</a>
+        </nav>
+    </header>
+
+    <form action="formulario.php" method="post">
+        <h1 class="title" style="font-family: 'Estricta', sans-serif;">Formulário de Cadastro</h1>
+
+        <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="idade">Idade</label>
+            <input type="number" name="idade" id="idade" required>
+        </div>
+
+        <div class="form-group">
+            <label for="">Gênero:</label>
+            <div class="form-inline">
+                <label for="genero"><input type="radio" name="sexo" value="M">Masculino</label>
+                <label for="genero"><input type="radio" name="sexo" value="F">Feminino</label>
+                <label for="genero"><input type="radio" name="sexo" value="N">Prefiro não informar</label>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="">Linguagens:</label>
+            <label for="lingaugens"><input type="checkbox" name="linguagens" id="html" value="html">HTML</label>
+            <label for="lingaugens"><input type="checkbox" name="linguagens" id="css" value="css">CSS</label>
+            <label for="lingaugens"><input type="checkbox" name="linguagens" id="js" value="js">Java Script</label>
+        </div>
+
+        <label for="estado">Estado:</label>
+            <select name="estado" id="estados" required>
+            <option value="">-- Escolha um estado --</option>
+
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+        </select>
+
+        <label for="mensagem">Deixe sua mensagem:</label>
+        <textarea name="mensagem" id="mensagem" maxlength="300"></textarea>
+
+        <input type="submit" value="Cadastrar">
+    </form>
+</body>
+</html>

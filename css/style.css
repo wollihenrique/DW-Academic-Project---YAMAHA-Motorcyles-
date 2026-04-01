@@ -1,0 +1,112 @@
+@import url('https://fonts.cdnfonts.com/css/estricta');               
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    text-decoration: none;
+    font-family: 'Estricta', sans-serif;
+    font-size: larger;
+    color: #fff;
+}
+
+header a:hover {
+    color: darkgray;
+    font-size: x-large;
+    transition-duration: 1s;
+}
+
+header span.Wolli {
+    padding: 0px 20px;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+}
+
+.btn-cadastro {
+    background-color: #0077cc;
+    color: #fff;
+    font-family: 'Estricta', sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-cadastro:hover {
+    background-color: #005fa3;
+    transform: scale(1.05);
+}
+
+.btn-cadastro:active {
+    transform: scale(0.98);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0px 20px;
+}
+
+h1.title{
+    padding-top: 2rem;
+    text-align: center;
+}
+
+h2.sub-title {
+    text-align: center;
+}
+
+figure img{
+    display: block;
+    margin: 0 auto;
+}
+
+ol, ul {
+    font-family: "Roboto", sans-serif;
+}
+
+section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+}
+
+section p {
+    text-align: justify;
+    margin-bottom: 16px;
+}
+
+section h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+section ul,
+section ol {
+    margin: 0 auto;
+    max-width: 500px;
+    padding-left: 20px;
+}
+
+section a {
+    color: #0077cc;
+    font-weight: bold;
+}
